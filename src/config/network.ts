@@ -91,6 +91,8 @@ const networkConfig = {
       pvp: "erd1qqqqqqqqqqqqqpgqtuyjw08nvj4v4akk5yfkaqxw7p9s8vndq5yqd805px",
       mintingStakingNft:
         "erd1qqqqqqqqqqqqqpgqgzxgr8ynapal3y0l3avpfvpgtl37uufnq5yq7fpkkl",
+      mintJeeter:
+        "erd1qqqqqqqqqqqqqpgq3tzxdx7v5rzssnn30fe8fs2mwpwxnj4fq5yq60hafh",
     },
   },
   devnet: {
@@ -152,6 +154,8 @@ const networkConfig = {
       stakeBsk: "",
       mintingStakingNft:
         "erd1qqqqqqqqqqqqqpgqjsjkl4qeafpgs8v6px83qwal8n66wmsgq5yqp3ljer",
+      mintJeeter:
+        "erd1qqqqqqqqqqqqqpgq2aedflhdmr6jghrhsxufdnqh3ak22xnuq5yqmr6ccp",
     },
   },
   testnet: {
