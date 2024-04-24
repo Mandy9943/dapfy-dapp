@@ -1,1 +1,1 @@
-export const minAmountJeetToMint = 300_000 * 10 ** 18;
+export const minAmountJeetToMint = 1000_000 * 10 ** 18;
