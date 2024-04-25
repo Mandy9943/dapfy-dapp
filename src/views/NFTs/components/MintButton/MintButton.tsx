@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { selectedNetwork } from "@/config/network";
 import useAuthentication from "@/hooks/useAuthentication";
 import useGetAccountToken from "@/hooks/useGetAccountToken";
-import { formatNumber } from "@/utils/functions/formatBalance";
+import { formatBalance, formatNumber } from "@/utils/functions/formatBalance";
 import { formatTokenI } from "@/utils/functions/tokens";
 import { useTrackTransactionStatus } from "@multiversx/sdk-dapp/hooks";
 import BigNumber from "bignumber.js";
@@ -125,7 +125,12 @@ const MintButton = () => {
               ) : (
                 <div className="flex flex-col gap-4 items-center">
                   <div className="text-center">
-                    Mint open only for those that have at least 1 million JEET.
+                    You need at least{" "}
+                    {formatBalance({
+                      balance: minAmountJeetToMint,
+                      decimals: 18,
+                    })}{" "}
+                    JEET to mint a NFT
                   </div>
                   <Button variant={"secondary"} className="px-6" asChild>
                     <a
