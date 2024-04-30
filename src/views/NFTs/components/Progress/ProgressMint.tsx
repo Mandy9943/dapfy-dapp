@@ -1,6 +1,7 @@
 "use client";
 import { Progress } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
+import { formatNumber } from "@/utils/functions/formatBalance";
 import { calculatePercentage } from "@/utils/functions/numbers";
 import { useGetLeftToMint } from "../../utils/hooks";
 
@@ -29,10 +30,10 @@ const ProgressMint = () => {
           />
           <div className="flex justify-between text-sm font-medium mt-2">
             <span className="text-gray-600 dark:text-gray-300">
-              {sold}% Sold
+              {formatNumber(sold)}% Sold
             </span>
             <span className="text-gray-600 dark:text-gray-300">
-              {available}% Available
+              {formatNumber(available)}% Available
             </span>
           </div>
         </div>
